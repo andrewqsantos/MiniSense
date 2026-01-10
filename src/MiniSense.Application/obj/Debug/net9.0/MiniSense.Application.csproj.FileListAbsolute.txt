@@ -1,0 +1,15 @@
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/bin/Debug/net9.0/MiniSense.Application.deps.json
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/bin/Debug/net9.0/MiniSense.Application.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/bin/Debug/net9.0/MiniSense.Application.pdb
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/bin/Debug/net9.0/MiniSense.Domain.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/bin/Debug/net9.0/MiniSense.Domain.pdb
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/MiniSense.Application.csproj.AssemblyReference.cache
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/MiniSense.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/MiniSense.Application.AssemblyInfoInputs.cache
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/MiniSense.Application.AssemblyInfo.cs
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/MiniSense.Application.csproj.CoreCompileInputs.cache
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/MiniSens.9344A07B.Up2Date
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/MiniSense.Application.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/refint/MiniSense.Application.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/MiniSense.Application.pdb
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/ref/MiniSense.Application.dll

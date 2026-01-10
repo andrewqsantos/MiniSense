@@ -1,0 +1,293 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.API/MiniSense.API.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.API/MiniSense.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.API/MiniSense.API.csproj",
+        "projectName": "MiniSense.API",
+        "projectPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.API/MiniSense.API.csproj",
+        "packagesPath": "/Users/andrew/.nuget/packages/",
+        "outputPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andrew/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/MiniSense.Application.csproj": {
+                "projectPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/MiniSense.Application.csproj"
+              },
+              "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Infrastructure/MiniSense.Infrastructure.csproj": {
+                "projectPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Infrastructure/MiniSense.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
+            "Scalar.AspNetCore": {
+              "target": "Package",
+              "version": "[2.12.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/MiniSense.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/MiniSense.Application.csproj",
+        "projectName": "MiniSense.Application",
+        "projectPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/MiniSense.Application.csproj",
+        "packagesPath": "/Users/andrew/.nuget/packages/",
+        "outputPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andrew/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/MiniSense.Domain.csproj": {
+                "projectPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/MiniSense.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/MiniSense.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/MiniSense.Domain.csproj",
+        "projectName": "MiniSense.Domain",
+        "projectPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/MiniSense.Domain.csproj",
+        "packagesPath": "/Users/andrew/.nuget/packages/",
+        "outputPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andrew/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Infrastructure/MiniSense.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Infrastructure/MiniSense.Infrastructure.csproj",
+        "projectName": "MiniSense.Infrastructure",
+        "projectPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Infrastructure/MiniSense.Infrastructure.csproj",
+        "packagesPath": "/Users/andrew/.nuget/packages/",
+        "outputPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andrew/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/MiniSense.Application.csproj": {
+                "projectPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/MiniSense.Application.csproj"
+              },
+              "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/MiniSense.Domain.csproj": {
+                "projectPath": "/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/MiniSense.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniSense.Domain", "src\MiniSense.Domain\MiniSense.Domain.csproj", "{3AC4FCC6-86CC-4F9D-9722-C1705728DC95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniSense.Application", "src\MiniSense.Application\MiniSense.Application.csproj", "{EABD8562-C61B-41F9-8F36-15C6CF1DE87C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniSense.Infrastructure", "src\MiniSense.Infrastructure\MiniSense.Infrastructure.csproj", "{0F25FED4-6812-4EE9-9AF4-A0F18A41F4F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniSense.API", "src\MiniSense.API\MiniSense.API.csproj", "{FFCC362D-03D5-487D-BA9D-EEE6BBC1759E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E9492B9-BFF5-429F-9700-72646F7E61A0}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{59A34767-E970-46E0-8128-0279B4486274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniSense.Domain.Tests", "tests\MiniSense.Domain.Tests\MiniSense.Domain.Tests.csproj", "{EF4B9353-7650-450F-8E1F-163D6EC97CD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniSense.Application.Tests", "tests\MiniSense.Application.Tests\MiniSense.Application.Tests.csproj", "{C745605D-47C4-4AEC-BD56-E6255CDEEE7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AC4FCC6-86CC-4F9D-9722-C1705728DC95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC4FCC6-86CC-4F9D-9722-C1705728DC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC4FCC6-86CC-4F9D-9722-C1705728DC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC4FCC6-86CC-4F9D-9722-C1705728DC95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EABD8562-C61B-41F9-8F36-15C6CF1DE87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABD8562-C61B-41F9-8F36-15C6CF1DE87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABD8562-C61B-41F9-8F36-15C6CF1DE87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABD8562-C61B-41F9-8F36-15C6CF1DE87C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F25FED4-6812-4EE9-9AF4-A0F18A41F4F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F25FED4-6812-4EE9-9AF4-A0F18A41F4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F25FED4-6812-4EE9-9AF4-A0F18A41F4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F25FED4-6812-4EE9-9AF4-A0F18A41F4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFCC362D-03D5-487D-BA9D-EEE6BBC1759E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFCC362D-03D5-487D-BA9D-EEE6BBC1759E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFCC362D-03D5-487D-BA9D-EEE6BBC1759E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFCC362D-03D5-487D-BA9D-EEE6BBC1759E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4B9353-7650-450F-8E1F-163D6EC97CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4B9353-7650-450F-8E1F-163D6EC97CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4B9353-7650-450F-8E1F-163D6EC97CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4B9353-7650-450F-8E1F-163D6EC97CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C745605D-47C4-4AEC-BD56-E6255CDEEE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C745605D-47C4-4AEC-BD56-E6255CDEEE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C745605D-47C4-4AEC-BD56-E6255CDEEE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C745605D-47C4-4AEC-BD56-E6255CDEEE7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF4B9353-7650-450F-8E1F-163D6EC97CD5} = {59A34767-E970-46E0-8128-0279B4486274}
+		{C745605D-47C4-4AEC-BD56-E6255CDEEE7B} = {59A34767-E970-46E0-8128-0279B4486274}
+	EndGlobalSection
+EndGlobal

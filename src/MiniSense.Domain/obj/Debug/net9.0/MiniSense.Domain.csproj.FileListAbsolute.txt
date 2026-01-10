@@ -1,0 +1,11 @@
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/bin/Debug/net9.0/MiniSense.Domain.deps.json
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/bin/Debug/net9.0/MiniSense.Domain.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/bin/Debug/net9.0/MiniSense.Domain.pdb
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/MiniSense.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/MiniSense.Domain.AssemblyInfoInputs.cache
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/MiniSense.Domain.AssemblyInfo.cs
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/MiniSense.Domain.csproj.CoreCompileInputs.cache
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/MiniSense.Domain.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/refint/MiniSense.Domain.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/MiniSense.Domain.pdb
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/ref/MiniSense.Domain.dll

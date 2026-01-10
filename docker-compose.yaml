@@ -1,0 +1,29 @@
+﻿services:
+  minisense-db:
+    image: postgres:15-alpine
+    container_name: minisense-db
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: minisense_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  minisense-api:
+    build:
+      context: .
+      dockerfile: src/MiniSense.API/Dockerfile
+    container_name: minisense-api
+    depends_on:
+      - minisense-db
+    ports:
+      - "5000:8080" # Mapeia a porta 5000 do seu PC para a 8080 do container
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=minisense-db;Port=5432;Database=minisense_db;Username=admin;Password=password123;
+      - ASPNETCORE_ENVIRONMENT=Development
+
+volumes:
+  postgres_data:
