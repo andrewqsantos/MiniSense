@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eea21905_002D1743_002D427d_002Dafd1_002De9866a2ee68a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UserTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::EF4B9353-7650-450F-8E1F-163D6EC97CD5::net9.0::MiniSense.Domain.Tests.Entities.UserTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::EF4B9353-7650-450F-8E1F-163D6EC97CD5::net9.0::MiniSense.Domain.Tests.Entities.SensorDeviceTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::EF4B9353-7650-450F-8E1F-163D6EC97CD5::net9.0::MiniSense.Domain.Tests.Entities.SensorDataTests.Constructor_Should_Create_Instance_When_Data_Is_Valid&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::EF4B9353-7650-450F-8E1F-163D6EC97CD5::net9.0::MiniSense.Domain.Tests.Entities.SensorDataTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::EF4B9353-7650-450F-8E1F-163D6EC97CD5::net9.0::MiniSense.Domain.Tests.Entities.MeasurementUnitTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::EF4B9353-7650-450F-8E1F-163D6EC97CD5::net9.0::MiniSense.Domain.Tests.Entities.DataStreamTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::C745605D-47C4-4AEC-BD56-E6255CDEEE7B::net9.0::MiniSense.Application.Tests.Services.MiniSenseServiceTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
