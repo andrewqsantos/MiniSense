@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniSense.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aca707e70b3243ec25aa10cd721f7f0af931fed8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a58291c22d68339138014dc6a848610765196813")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniSense.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniSense.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: minisense-service
+  namespace: default
+spec:
+  type: LoadBalancer
+  selector:
+    app: minisense-api
+  ports:
+    - port: 80
+      targetPort: 8080

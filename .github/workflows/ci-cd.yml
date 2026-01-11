@@ -1,0 +1,65 @@
+name: CI/CD Monorepo
+
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore: # <--- O PULO DO GATO: Ignora commits que só mexem na pasta k8s
+      - 'k8s/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    # Permissão para o GITHUB_TOKEN fazer commit de volta no repo
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      # 1. Setup e Testes
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Restore & Build
+        run: dotnet build MiniSense.sln
+
+      - name: Test Domain
+        run: dotnet test tests/MiniSense.Domain.Tests/MiniSense.Domain.Tests.csproj --no-build
+
+      - name: Test Application
+        run: dotnet test tests/MiniSense.Application.Tests/MiniSense.Application.Tests.csproj --no-build
+      
+      # 2. Docker Build & Push
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/minisense-api:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/minisense-api:latest
+      
+      # 3. Atualizar Manifesto K8s (GitOps no mesmo repo)
+      - name: Update Kubernetes Manifest
+        run: |
+          # Configura identidade do Git
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          
+          # Atualiza a imagem no arquivo deployment.yaml
+          cd k8s
+          sed -i "s|image: .*|image: ${{ secrets.DOCKERHUB_USERNAME }}/minisense-api:${{ github.sha }}|g" deployment.yaml
+          
+          # Commita e Push de volta (O paths-ignore lá em cima evita o loop)
+          git add deployment.yaml
+          git commit -m "Bump docker tag to ${{ github.sha }}"
+          git push

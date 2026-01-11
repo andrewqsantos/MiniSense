@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minisense-api
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: minisense-api
+  template:
+    metadata:
+      labels:
+        app: minisense-api
+    spec:
+      containers:
+        - name: minisense-api
+          image: seu-usuario-dockerhub/minisense-api:latest # O CI vai alterar esta linha
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ConnectionStrings__DefaultConnection
+              value: "Host=postgres-service;Port=5432;Database=minisense_db;Username=admin;Password=admin123;"
