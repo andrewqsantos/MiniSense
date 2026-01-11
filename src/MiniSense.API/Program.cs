@@ -49,9 +49,20 @@ builder.Services.AddOpenApi("v1", options =>
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
-{
+{   
+    var services = scope.ServiceProvider;
     var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    try { context.Database.Migrate(); DbInitializer.Seed(context); } catch { }
+    try
+    {
+        context.Database.Migrate();
+        DbInitializer.Seed(context);
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "Ocorreu um erro ao rodar a migração ou o Seed.");
+        throw;
+    }
 }
 
 //app.UseHttpsRedirection();
