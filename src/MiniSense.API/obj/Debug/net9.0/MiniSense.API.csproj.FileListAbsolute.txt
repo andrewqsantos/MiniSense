@@ -135,3 +135,4 @@
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.API/obj/Debug/net9.0/MiniSense.API.pdb
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.API/obj/Debug/net9.0/MiniSense.API.genruntimeconfig.cache
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.API/obj/Debug/net9.0/ref/MiniSense.API.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.API/obj/Debug/net9.0/MiniSense.API.sourcelink.json

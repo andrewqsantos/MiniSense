@@ -13,3 +13,4 @@
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/refint/MiniSense.Application.dll
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/MiniSense.Application.pdb
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/ref/MiniSense.Application.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Application/obj/Debug/net9.0/MiniSense.Application.sourcelink.json

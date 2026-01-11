@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniSense.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a58291c22d68339138014dc6a848610765196813")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e19dfc89369215808545aeb2caefd281dbea48e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniSense.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniSense.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -17,3 +17,4 @@
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Infrastructure/obj/Debug/net9.0/MiniSense.Infrastructure.pdb
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Infrastructure/obj/Debug/net9.0/MiniSense.Infrastructure.genruntimeconfig.cache
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Infrastructure/obj/Debug/net9.0/ref/MiniSense.Infrastructure.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Infrastructure/obj/Debug/net9.0/MiniSense.Infrastructure.sourcelink.json

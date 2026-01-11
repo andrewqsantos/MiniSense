@@ -9,3 +9,4 @@
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/refint/MiniSense.Domain.dll
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/MiniSense.Domain.pdb
 /Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/ref/MiniSense.Domain.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/src/MiniSense.Domain/obj/Debug/net9.0/MiniSense.Domain.sourcelink.json
