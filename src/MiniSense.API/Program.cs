@@ -54,7 +54,7 @@ using (var scope = app.Services.CreateScope())
     try { context.Database.Migrate(); DbInitializer.Seed(context); } catch { }
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 

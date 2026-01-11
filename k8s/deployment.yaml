@@ -20,4 +20,4 @@ spec:
             - containerPort: 8080
           env:
             - name: ConnectionStrings__DefaultConnection
-              value: "Host=postgres-service;Port=5432;Database=minisense_db;Username=admin;Password=admin123;"
+              value: "Host=10.70.101.167;Port=5432;Database=minisense_db;Username=admin;Password=admin123;"

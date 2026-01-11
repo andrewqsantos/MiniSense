@@ -5,6 +5,7 @@ metadata:
   namespace: default
 spec:
   type: LoadBalancer
+  loadBalancerIP: 10.70.101.5
   selector:
     app: minisense-api
   ports:
