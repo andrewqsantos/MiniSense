@@ -9,7 +9,7 @@ namespace MiniSense.API.Controllers;
 [Produces("application/json")]
 public class DevicesController(IMiniSenseService service) : ControllerBase
 {
-    /// <summary>
+    /// <summary> 
     /// Obtém detalhes de um dispositivo e suas últimas medições.
     /// </summary>
     /// <param name="key">Chave de identificação (Guid string).</param>
