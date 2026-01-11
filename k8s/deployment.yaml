@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: minisense-api
-          image: andrewhubs/minisense-api:4f2ceb9c92d8a62bf10325450374a663f8d9d4ef
+          image: andrewhubs/minisense-api:5fa75f000ce07b1a06ce839c7cb440cb795c9417
           ports:
             - containerPort: 8080
           env:
