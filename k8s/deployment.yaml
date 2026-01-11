@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: minisense-api
-          image: seu-usuario-dockerhub/minisense-api:latest # O CI vai alterar esta linha
+          image: andrewhubs/minisense-api:4f2ceb9c92d8a62bf10325450374a663f8d9d4ef
           ports:
             - containerPort: 8080
           env:
