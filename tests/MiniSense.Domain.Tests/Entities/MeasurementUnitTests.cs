@@ -48,9 +48,9 @@ public class MeasurementUnitTests
     [InlineData("")]
     [InlineData("   ")]
     [InlineData(null)]
-    public void Constructor_Should_Throw_When_Description_Is_Empty(string invalidDesc)
+    public void Constructor_Should_Throw_When_Description_Is_Empty(string? invalidDesc)
     {
-        Action action = () => _ = new MeasurementUnit("Kg", invalidDesc);
+        Action action = () => _ = new MeasurementUnit("Kg", invalidDesc!);
         action.Should().Throw<ArgumentException>()
             .WithMessage("Description cannot be empty*");
     }
