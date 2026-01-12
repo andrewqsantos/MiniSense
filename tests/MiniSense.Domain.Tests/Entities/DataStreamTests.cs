@@ -48,7 +48,7 @@ public class DataStreamTests
     [InlineData(-1)]
     public void Constructor_Should_Throw_When_DeviceId_Is_Invalid(int invalidDeviceId)
     {
-        Action action = () => new DataStream(invalidDeviceId, "Valid Label", UnitType.Celsius);
+        Action action = () => _ = new DataStream(invalidDeviceId, "Valid Label", UnitType.Celsius);
 
         action.Should().Throw<ArgumentException>()
             .WithMessage("Invalid Device Id*");
@@ -58,9 +58,9 @@ public class DataStreamTests
     [InlineData(null)]
     [InlineData("")]
     [InlineData("   ")]
-    public void Constructor_Should_Throw_When_Label_Is_Empty(string invalidLabel)
+    public void Constructor_Should_Throw_When_Label_Is_Empty(string? invalidLabel)
     {
-        Action action = () => new DataStream(1, invalidLabel, UnitType.Celsius);
+        Action action = () => _ = new DataStream(1, invalidLabel!, UnitType.Celsius);
 
         action.Should().Throw<ArgumentException>()
             .WithMessage("Label cannot be empty*");
@@ -71,7 +71,7 @@ public class DataStreamTests
     {
         var longLabel = GenerateString(ValidationConstants.MaxStreamLabelLength + 1);
 
-        Action action = () => new DataStream(1, longLabel, UnitType.Celsius);
+        Action action = () => _ = new DataStream(1, longLabel, UnitType.Celsius);
 
         action.Should().Throw<ArgumentException>()
             .WithMessage($"Label max length is {ValidationConstants.MaxStreamLabelLength}*");
@@ -81,7 +81,7 @@ public class DataStreamTests
     public void Constructor_Should_Throw_When_UnitType_Is_Invalid()
     {
         var invalidUnit = (UnitType)999; 
-        Action action = () => new DataStream(1, "Label", invalidUnit);
+        Action action = () => _ = new DataStream(1, "Label", invalidUnit);
 
         action.Should().Throw<ArgumentException>()
             .WithMessage("Invalid Measurement Unit*");

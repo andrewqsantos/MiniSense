@@ -11,7 +11,11 @@ public class MeasurementUnit : Entity
     private readonly List<DataStream> _streams = new();
     public IReadOnlyCollection<DataStream> Streams => _streams.AsReadOnly();
 
-    protected MeasurementUnit() { }
+    protected MeasurementUnit()
+    {
+        Symbol = string.Empty;
+        Description = string.Empty;
+    }
 
     public MeasurementUnit(string symbol, string description)
     {
@@ -27,4 +31,25 @@ public class MeasurementUnit : Entity
         Symbol = symbol;
         Description = description;
     }
+    
+    public void AddDataStream(DataStream stream)
+    {
+        if (stream == null)
+            throw new ArgumentNullException(nameof(stream), "O stream não pode ser nulo.");
+
+        if (!_streams.Contains(stream))
+        {
+            _streams.Add(stream);
+        }
+    }
+    
+    
+    public void RemoveDataStream(DataStream stream)
+    {
+        if (_streams.Contains(stream))
+        {
+            _streams.Remove(stream);
+        }
+    }
+    
 }

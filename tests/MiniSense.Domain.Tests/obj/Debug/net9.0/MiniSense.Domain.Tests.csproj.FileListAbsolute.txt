@@ -103,3 +103,4 @@
 /Volumes/Storage-NVMe/Developer/MiniSense/tests/MiniSense.Domain.Tests/obj/Debug/net9.0/MiniSense.Domain.Tests.pdb
 /Volumes/Storage-NVMe/Developer/MiniSense/tests/MiniSense.Domain.Tests/obj/Debug/net9.0/MiniSense.Domain.Tests.genruntimeconfig.cache
 /Volumes/Storage-NVMe/Developer/MiniSense/tests/MiniSense.Domain.Tests/obj/Debug/net9.0/ref/MiniSense.Domain.Tests.dll
+/Volumes/Storage-NVMe/Developer/MiniSense/tests/MiniSense.Domain.Tests/obj/Debug/net9.0/MiniSense.Domain.Tests.sourcelink.json

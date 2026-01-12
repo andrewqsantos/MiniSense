@@ -45,7 +45,7 @@ public class SensorDeviceTests
     [InlineData(-1)]
     public void Constructor_Should_Throw_When_UserId_Is_Invalid(int invalidUserId)
     {
-        Action action = () => new SensorDevice(invalidUserId, "Label", "Desc");
+        Action action = () => _ = new SensorDevice(invalidUserId, "Label", "Desc");
         action.Should().Throw<ArgumentException>()
             .WithMessage("Invalid User Id*");
     }
@@ -54,9 +54,9 @@ public class SensorDeviceTests
     [InlineData("")]
     [InlineData("   ")]
     [InlineData(null)]
-    public void Constructor_Should_Throw_When_Label_Is_Empty(string invalidLabel)
+    public void Constructor_Should_Throw_When_Label_Is_Empty(string? invalidLabel)
     {
-        Action action = () => new SensorDevice(1, invalidLabel, "Desc");
+        Action action = () => _ = new SensorDevice(1, invalidLabel!, "Desc");
         action.Should().Throw<ArgumentException>()
             .WithMessage("Label cannot be empty*");
     }
@@ -65,7 +65,7 @@ public class SensorDeviceTests
     public void Constructor_Should_Throw_When_Label_Is_Too_Long()
     {
         var longLabel = GenerateString(ValidationConstants.MaxLabelLength + 1);
-        Action action = () => new SensorDevice(1, longLabel, "Desc");
+        Action action = () => _ = new SensorDevice(1, longLabel, "Desc");
         
         action.Should().Throw<ArgumentException>()
             .WithMessage($"Label max length is {ValidationConstants.MaxLabelLength}*");
@@ -75,9 +75,9 @@ public class SensorDeviceTests
     [InlineData("")]
     [InlineData("   ")]
     [InlineData(null)]
-    public void Constructor_Should_Throw_When_Description_Is_Empty(string invalidDesc)
+    public void Constructor_Should_Throw_When_Description_Is_Empty(string? invalidDesc)
     {
-        Action action = () => new SensorDevice(1, "Label", invalidDesc);
+        Action action = () => _ = new SensorDevice(1, "Label", invalidDesc!);
         action.Should().Throw<ArgumentException>()
             .WithMessage("Description cannot be empty*");
     }
@@ -86,7 +86,7 @@ public class SensorDeviceTests
     public void Constructor_Should_Throw_When_Description_Is_Too_Long()
     {
         var longDesc = GenerateString(ValidationConstants.MaxDescriptionLength + 1);
-        Action action = () => new SensorDevice(1, "Label", longDesc);
+        Action action = () => _ = new SensorDevice(1, "Label", longDesc);
         
         action.Should().Throw<ArgumentException>()
             .WithMessage($"Description max length is {ValidationConstants.MaxDescriptionLength}*");

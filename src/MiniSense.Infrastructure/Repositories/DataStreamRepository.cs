@@ -9,7 +9,6 @@ public class DataStreamRepository(AppDbContext context) : IDataStreamRepository
 {
     public void Add(DataStream stream)
     {
-        // Apenas anexa ao contexto. O INSERT real só acontece no UnitOfWork.CommitAsync()
         context.DataStreams.Add(stream);
     }
 

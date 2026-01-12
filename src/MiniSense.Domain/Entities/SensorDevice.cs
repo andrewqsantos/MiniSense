@@ -15,7 +15,11 @@ public class SensorDevice : Entity
     private readonly List<DataStream> _streams = new();
     public IReadOnlyCollection<DataStream> Streams => _streams.AsReadOnly();
 
-    protected SensorDevice() { }
+    protected SensorDevice()
+    {
+        Label = string.Empty;
+        Description = string.Empty;
+    }
 
     public SensorDevice(int userId, string label, string description)
     {

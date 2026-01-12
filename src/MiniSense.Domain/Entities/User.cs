@@ -11,7 +11,11 @@ public class User : Entity
     private readonly List<SensorDevice> _devices = new();
     public IReadOnlyCollection<SensorDevice> Devices => _devices.AsReadOnly();
 
-    protected User() { }
+    protected User()
+    {
+        Username = string.Empty;
+        Email = string.Empty;
+    }
 
     public User(string username, string email)
     {
@@ -36,5 +40,13 @@ public class User : Entity
         if (string.IsNullOrWhiteSpace(newEmail) || !newEmail.Contains("@"))
             throw new ArgumentException("Invalid email", nameof(newEmail));
         Email = newEmail;
+    }
+    
+    public void AddDevice(SensorDevice device)
+    {
+        if (device == null)
+            throw new ArgumentNullException(nameof(device));
+
+        _devices.Add(device);
     }
 }

@@ -13,8 +13,7 @@ public class MiniSenseService(
     IDataStreamRepository streamRepository,
     IMeasurementUnitRepository unitRepository,
     IUserRepository userRepository,
-    IDeviceQueryService queryService,
-    ISensorDataRepository dataRepository
+    IDeviceQueryService queryService
     ) : IMiniSenseService
 {
     public async Task<IEnumerable<MeasurementUnitDto>> GetAllUnitsAsync()

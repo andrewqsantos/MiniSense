@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniSense.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e19dfc89369215808545aeb2caefd281dbea48e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+404d77cc942c7fa63f6ad93a101034cde7e0c091")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniSense.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniSense.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

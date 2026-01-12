@@ -28,7 +28,7 @@ public class SensorDataTests
         double value = 10;
         DateTime timestamp = DateTime.UtcNow;
 
-        Action action = () => new SensorData(invalidStreamId, value, timestamp);
+        Action action = () => _ = new SensorData(invalidStreamId, value, timestamp);
 
         action.Should().Throw<ArgumentException>()
             .WithMessage("Invalid Stream Id*");
@@ -40,7 +40,7 @@ public class SensorDataTests
         int streamId = 1;
         DateTime futureDate = DateTime.UtcNow.AddMinutes(10); 
 
-        Action action = () => new SensorData(streamId, 20.0, futureDate);
+        Action action = () => _ = new SensorData(streamId, 20.0, futureDate);
 
         action.Should().Throw<ArgumentException>()
             .WithMessage("Timestamp cannot be in the future*");

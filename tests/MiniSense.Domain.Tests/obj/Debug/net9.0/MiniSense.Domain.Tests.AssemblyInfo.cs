@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniSense.Domain.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a58291c22d68339138014dc6a848610765196813")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+404d77cc942c7fa63f6ad93a101034cde7e0c091")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniSense.Domain.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniSense.Domain.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

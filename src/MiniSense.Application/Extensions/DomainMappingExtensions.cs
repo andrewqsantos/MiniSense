@@ -34,8 +34,7 @@ public static class DomainMappingExtensions
             stream.Label,
             stream.MeasurementUnitId,
             stream.SensorDeviceId,
-            
-            stream.Measurements?.Count ?? 0, 
+            stream.Measurements.Count, 
             null
         );
     }

@@ -8,7 +8,6 @@ using MiniSense.Domain.Entities.Base;
 using MiniSense.Domain.Enums;
 using MiniSense.Domain.Interfaces.Repositories;
 using Moq;
-using Xunit;
 
 namespace MiniSense.Application.Tests.Services;
 
@@ -17,10 +16,9 @@ public class MiniSenseServiceTests
     private readonly Mock<IUnitOfWork> _unitOfWorkMock;
     private readonly Mock<ISensorDeviceRepository> _deviceRepoMock;
     private readonly Mock<IDataStreamRepository> _streamRepoMock;
-    private readonly Mock<IMeasurementUnitRepository> _unitRepoMock;
+    //private readonly Mock<IMeasurementUnitRepository> _unitRepoMock;
     private readonly Mock<IUserRepository> _userRepoMock;
     private readonly Mock<IDeviceQueryService> _queryServiceMock;
-    private readonly Mock<ISensorDataRepository> _dataRepoMock;
 
     private readonly MiniSenseService _service;
 
@@ -29,19 +27,17 @@ public class MiniSenseServiceTests
         _unitOfWorkMock = new Mock<IUnitOfWork>();
         _deviceRepoMock = new Mock<ISensorDeviceRepository>();
         _streamRepoMock = new Mock<IDataStreamRepository>();
-        _unitRepoMock = new Mock<IMeasurementUnitRepository>();
+        var unitRepoMock = new Mock<IMeasurementUnitRepository>();
         _userRepoMock = new Mock<IUserRepository>();
         _queryServiceMock = new Mock<IDeviceQueryService>();
-        _dataRepoMock = new Mock<ISensorDataRepository>();
 
         _service = new MiniSenseService(
             _unitOfWorkMock.Object,
             _deviceRepoMock.Object,
             _streamRepoMock.Object,
-            _unitRepoMock.Object,
+            unitRepoMock.Object,
             _userRepoMock.Object,
-            _queryServiceMock.Object,
-            _dataRepoMock.Object
+            _queryServiceMock.Object
         );
     }
 

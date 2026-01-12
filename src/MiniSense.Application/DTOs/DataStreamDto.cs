@@ -11,5 +11,5 @@ public sealed record DataStreamDto(
     int MeasurementCount,
     
     [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    IEnumerable<SensorDataSummaryDto> Measurements
+    IEnumerable<SensorDataSummaryDto>? Measurements
 );

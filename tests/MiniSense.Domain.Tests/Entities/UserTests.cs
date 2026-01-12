@@ -26,9 +26,9 @@ public class UserTests
     [InlineData("")]
     [InlineData("   ")]
     [InlineData(null)]
-    public void Constructor_Should_Throw_When_Username_Is_Invalid(string invalidUsername)
+    public void Constructor_Should_Throw_When_Username_Is_Invalid(string? invalidUsername)
     {
-        Action action = () => new User(invalidUsername, "test@test.com");
+        Action action = () => _ = new User(invalidUsername!, "test@test.com");
         action.Should().Throw<ArgumentException>()
             .WithMessage("Username cannot be empty*");
     }
@@ -38,7 +38,7 @@ public class UserTests
     {
         var longName = GenerateString(ValidationConstants.MaxUsernameLength + 1);
         
-        Action action = () => new User(longName, "test@test.com");
+        Action action = () => _ = new User(longName, "test@test.com");
         
         action.Should().Throw<ArgumentException>()
             .WithMessage($"Username too long*");
@@ -48,9 +48,9 @@ public class UserTests
     [InlineData("")]
     [InlineData("   ")]
     [InlineData(null)]
-    public void Constructor_Should_Throw_When_Email_Is_Empty(string invalidEmail)
+    public void Constructor_Should_Throw_When_Email_Is_Empty(string? invalidEmail)
     {
-        Action action = () => new User("user", invalidEmail);
+        Action action = () => _ = new User("user", invalidEmail!);
         action.Should().Throw<ArgumentException>()
             .WithMessage("Email cannot be empty*");
     }
@@ -58,7 +58,7 @@ public class UserTests
     [Fact]
     public void Constructor_Should_Throw_When_Email_Format_Is_Invalid()
     {
-        Action action = () => new User("user", "email-sem-arroba.com");
+        Action action = () => _ = new User("user", "email-sem-arroba.com");
         action.Should().Throw<ArgumentException>()
             .WithMessage("Invalid email format*");
     }

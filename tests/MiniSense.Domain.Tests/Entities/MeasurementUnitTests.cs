@@ -26,9 +26,9 @@ public class MeasurementUnitTests
     [InlineData("")]
     [InlineData("   ")]
     [InlineData(null)]
-    public void Constructor_Should_Throw_When_Symbol_Is_Empty(string invalidSymbol)
+    public void Constructor_Should_Throw_When_Symbol_Is_Empty(string? invalidSymbol)
     {
-        Action action = () => new MeasurementUnit(invalidSymbol, "Description");
+        Action action = () => _ = new MeasurementUnit(invalidSymbol!, "Description");
         action.Should().Throw<ArgumentException>()
             .WithMessage("Symbol cannot be empty*");
     }
@@ -38,7 +38,7 @@ public class MeasurementUnitTests
     {
         var longSymbol = GenerateString(ValidationConstants.MaxUnitSymbolLength + 1);
         
-        Action action = () => new MeasurementUnit(longSymbol, "Description");
+        Action action = () => _ = new MeasurementUnit(longSymbol, "Description");
         
         action.Should().Throw<ArgumentException>()
             .WithMessage($"Symbol max length is*");
@@ -50,7 +50,7 @@ public class MeasurementUnitTests
     [InlineData(null)]
     public void Constructor_Should_Throw_When_Description_Is_Empty(string invalidDesc)
     {
-        Action action = () => new MeasurementUnit("Kg", invalidDesc);
+        Action action = () => _ = new MeasurementUnit("Kg", invalidDesc);
         action.Should().Throw<ArgumentException>()
             .WithMessage("Description cannot be empty*");
     }

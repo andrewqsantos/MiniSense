@@ -21,7 +21,10 @@ public class DataStream : Entity
     private readonly List<SensorData> _measurements = new();
     public IReadOnlyCollection<SensorData> Measurements => _measurements.AsReadOnly();
 
-    protected DataStream() { }
+    protected DataStream()
+    {
+        Label  = string.Empty;
+    }
 
     public DataStream(int sensorDeviceId, string label, UnitType unitType)
     {
