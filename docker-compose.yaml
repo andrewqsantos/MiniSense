@@ -11,6 +11,11 @@
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d minisense_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   minisense-api:
     build:
@@ -18,7 +23,9 @@
       dockerfile: Dockerfile
     container_name: minisense-api
     depends_on:
-      - minisense-db
+      minisense-db:
+        condition: service_healthy
+    restart: on-failure
     ports:
       - "5284:8080"
     environment:
